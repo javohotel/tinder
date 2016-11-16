@@ -3,7 +3,7 @@ var megustas = [];
 var nomegusta = [];
 
 $(document).ready(function(){
-    $.get("http://localhost:3030/js/api.json", function(data, status){
+    $.get("js/api.json", function(data, status){
 
     	var nombre = data[random].show_title;
     	var imagen = data[random].poster;
@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     function pasarOk(){
             
-        $.get("http://localhost:3030/js/api.json", function(data, status){
+        $.get("js/api.json", function(data, status){
 
             megustas.push(data[random]);
 
@@ -39,7 +39,7 @@ $(document).ready(function(){
 
     function pasarNo(){
             
-        $.get("http://localhost:3030/js/api.json", function(data, status){
+        $.get("js/api.json", function(data, status){
 
             nomegusta.push(data[random]);
 
